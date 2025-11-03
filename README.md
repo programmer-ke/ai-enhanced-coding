@@ -92,4 +92,9 @@ Create a todo list representing the tasks in order of implementation
 
 Save the output of this into a `todo.md` file, tweaking where necessary.
 
+# References
+
+https://github.com/automata/aicodeguide
+
+https://old.reddit.com/r/agile/comments/1btxpzd/vertical_slicing_the_single_most_impactful/
 
