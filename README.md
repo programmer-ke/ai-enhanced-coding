@@ -2,7 +2,7 @@
 
 The initial motivation was this [AI coding guide][aicode]. In my case
 I wanted to de-emphasize the vibe-coding aspect and document what I
-find generally works for human/AI collaboration.
+find generally works for me with AI collaboration.
 
 [aicode]: https://github.com/automata/aicodeguide
 
@@ -11,13 +11,13 @@ add/remove things.
 
 ## AI prompts to assist a project initiation and planning phase
 
-### Build a Product Requirements Document (PRD)
+### Build an MVP Spec
 
 Start with the following prompt:
 
 ```
-You're a senior software engineer. We're going to build the PRD of a project
-together.
+You are brainstorming with a senior software engineer with the goal
+of producing an MVP Spec.
 
 # VERY IMPORTANT
 
@@ -26,28 +26,32 @@ together.
 - Go deeper on every important detail required
 
 # IDEA
+
+I'm building an MVP of the following:
+
 <Describe the idea in a few paragraphs here>
 ```
 
-Answer questions for a few minutes with as much detail as possible,
-until done or you decide it's enough.
+Answer questions for a few minutes with as much detail as you feel is
+necessary, until done or you decide is enough.
 
-Next use a prompt like the following to use the context of the
-previous conversation to create a PRD:
+
+If necessary, use a prompt like the following to use the context of
+the previous conversation to create an MVP spec.
 
 ```
-Compile those findings into a PRD. Use markdown format. It should
-contain the following sections:
+Compile those findings into an MVP spec. Use markdown format.
+It should include information like:
 
 - Project overview
 - Core requirements
 - Core features
 - Core components
 - App/user flow
-- Implementation plan
 ```
 
-Copy the response to a `docs/specs.md`
+Copy the result to a `docs/specs.md` and review and edit the spec as
+you see fit.
 
 Next create a task list. In my case, I like using the [vertical
 feature slicing][vert] approach, a kind of evolutionary approach to
@@ -58,7 +62,7 @@ feature development.
 A prompt like the following can be used (modify as needed):
 
 ```
-Based on the generated PRD, create a detailed step-by-step plan to
+Based on the generated MVP spec, create a detailed step-by-step plan to
 build this project.
 
 Inspired by functional core, imperative shell pattern, we shall
@@ -82,9 +86,10 @@ Create a todo list representing the tasks in order of implementation
 
 # VERY IMPORTANT
 - Use markdown
-- Each task should represent a thin vertical feature slice with
+- Each coding task should represent a thin vertical feature slice with
   an end to end implementation across the business logic and app layers
-  (functional core and imperative shell)
+  (functional core and imperative shell) with applicable automated tests
+  where necessary.
 - We should be able to change each task's status from todo -> in
   progress -> done
 - Each task should have a number id
@@ -97,4 +102,3 @@ Save the output of this into a `todo.md` file, tweaking where necessary.
 https://github.com/automata/aicodeguide
 
 https://old.reddit.com/r/agile/comments/1btxpzd/vertical_slicing_the_single_most_impactful/
-
