@@ -88,7 +88,7 @@ Create a todo list representing the tasks in order of implementation
 # VERY IMPORTANT
 - Use markdown
 - Each task should represent a thin vertical feature slice 
-  that delivers some value to an end user or administrator
+  that delivers some value to an end user (consumer, operator or backend staff)
 - We should be able to change each task's status from todo -> in
   progress -> done
 - Each task should have a number id
