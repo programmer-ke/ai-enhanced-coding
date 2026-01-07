@@ -97,12 +97,12 @@ Create a todo list representing the tasks in order of implementation
 Save the output of this into a `todo.md` file, making changes where
 necessary. As you work through the tasks you may have to change some
 of them or even the overall approach based on acquired feedback or
-updated information.
+learned information.
 
 ## Architecture
 
 Depending on the complexity, I'll use either the [Functional Core
-Imperative Shell][fcis] pattern, or [Domain Driven Design][ddd].
+Imperative Shell][fcis] pattern or [Domain Driven Design][ddd].
 
 [fcis]: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 [ddd]: https://www.cosmicpython.com/
@@ -125,6 +125,8 @@ network access.
 Suggest an approach if possible and if it doesn't add too
 much indirection to affect readability.
 ```
+
+Examine the output and tweak where necessary.
 
 # References
 
