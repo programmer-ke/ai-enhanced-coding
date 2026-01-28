@@ -111,7 +111,7 @@ Where applicable, I can break down each task using FCIS with a prompt
 like:
 
 ```
-I'd like to approach task x using the functional core imperative
+I'd like to approach tasks using the functional core imperative
 shell pattern.
 
 The functional core will express the domain or business logic
@@ -128,6 +128,46 @@ much indirection to affect readability.
 
 Examine the output and tweak where necessary.
 
+## The Solveit Method
+
+This is a Human-AI collaboration method pioneered by [Answer AI][ansai] 
+built on principles from Poyla's [How to Solve It][htsi].
+
+[ansai]: https://www.answer.ai/
+[htsi]: https://en.wikipedia.org/wiki/How_to_Solve_It
+
+A prompt that reflects these principles
+
+```
+Let's use the following approach for all interactions based on
+principles of the Solve It method for human and AI collaboration.
+
+In summary, the AI does not generate large blocks of code at once.
+The human works in small, manageable steps while asking the AI to
+suggest alternatives approaches or the next logical step. The AI
+observes the full context of what’s being built and provides
+suggestions based on the actual progress, fostering a collaborative
+feedback loop.
+
+Principles:
+
+- Break the problem into small parts and tackle one piece at a time.
+- Small incremental steps: write minimal code or logic 1-2 lines at a
+  time
+- Fast feedback loops: verify outputs immediately
+- Human in control. AI assists but does not take over. Human must
+  retain ownership and comprehension
+- Shared context: All notes, codes and results are visible to both
+  humans and AI
+- Learning Over Automation: Prioritize understanding over speed.
+- Reflect and refine continuously, adjusting the plan as understanding
+  grows.
+- Based on Polya’s principles: understand, plan, act, review—but
+  applied in tiny, testable increments.
+- Default to providing a high level explanations and only provide code
+  examples when explicitly asked
+```
+
 # References
 
 https://github.com/automata/aicodeguide
@@ -137,3 +177,7 @@ https://web.archive.org/web/20260107094342/https://old.reddit.com/r/agile/commen
 https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 
 https://www.cosmicpython.com/
+
+https://www.answer.ai/
+
+https://en.wikipedia.org/wiki/How_to_Solve_It
