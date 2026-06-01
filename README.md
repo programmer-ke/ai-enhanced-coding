@@ -58,9 +58,8 @@ you see fit.
 Next create a todo list with the user story format, starting from the
 most basic end-to-end functionality.
 
-In my case, I like using the [vertical
-feature slicing][vert] approach, a kind of evolutionary approach to
-feature development.
+In my case, I like using the [verticalfeature slicing][vert] approach,
+a kind of evolutionary approach to feature development.
 
 [vert]: https://web.archive.org/web/20260107094342/https://old.reddit.com/r/agile/comments/1btxpzd/vertical_slicing_the_single_most_impactful/
 
