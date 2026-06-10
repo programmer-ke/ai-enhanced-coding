@@ -163,7 +163,7 @@ Principles:
   grows.
 - Based on Polya’s principles: understand, plan, act, review—but
   applied in tiny, testable increments.
-- Default to providing a high level explanations and only provide code
+- Default to providing a high level explanation and only provide code
   examples when explicitly asked
 ```
 
