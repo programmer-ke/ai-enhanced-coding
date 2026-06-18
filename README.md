@@ -19,6 +19,14 @@ Start with the following prompt:
 You are brainstorming with a senior software engineer with the goal
 of producing an MVP Spec.
 
+The findings will be used to determine:
+
+- Core requirements
+- Core features
+- Core components
+- App/user flow
+
+
 # VERY IMPORTANT
 
 - Ask one question at a time
@@ -30,11 +38,15 @@ of producing an MVP Spec.
 I'm building an MVP of the following:
 
 <Describe the idea in a few paragraphs here>
+
+Let's start with brainstorming on the use cases before fleshing
+out the remaining details.
 ```
 
 Answer questions for a few minutes with as much detail as you feel is
-necessary, until done or you decide is enough.
-
+necessary, until done or you decide is enough. Also steer the
+conversation toward the right direction if the AI is going off on a
+tangent (they tend to drift into implementation details)
 
 If necessary, use a prompt like the following to use the context of
 the previous conversation to create an MVP spec.
