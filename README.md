@@ -21,11 +21,13 @@ of producing an MVP Spec.
 
 The findings will be used to determine:
 
-- Core requirements
-- Core features
-- Core components
-- App/user flow
-
+- Product Vision and Intro
+- Scope and acceptance criteria
+- User Personas and use cases
+- Functional requirements
+- Non-functional requirements
+- High level (low fidelity) architecture
+- Dependencies and constraints
 
 # VERY IMPORTANT
 
@@ -55,17 +57,33 @@ the previous conversation to create an MVP spec.
 Compile those findings into an MVP spec. Use markdown format.
 It should include information like:
 
-- Project overview
-- Core requirements
-- Core features
-- Core components
-- App/user flow
+- Product Vision and Intro
+- Scope and acceptance criteria
+- User Personas and use cases
+- Functional requirements
+- Non-functional requirements
+- High level (low fidelity) architecture
+- Dependencies and constraints
 ```
 
 Copy the result to a `docs/specs.md` and review and edit the spec as
 you see fit.
 
-## Create a todo list
+## Create the todo list
+
+Keep in mind this heirarchy.
+
+```
+Product Requirements  (what/why)
+       ↓
+Use Cases             (how user achieves goal, all flows)
+       ↓
+User Stories          (slice of value for iteration)
+       ↓
+Scenarios             (concrete examples per story)
+       ↓
+Acceptance tests      (e.g. gherkin-style tests matching scenarios)
+```
 
 Next create a todo list with the user story format, starting from the
 most basic end-to-end functionality.
@@ -78,37 +96,45 @@ a kind of evolutionary approach to feature development.
 A prompt like the following can be used (modify as needed):
 
 ```
-Based on the generated MVP spec, create a todo list in the form of user
-stories to build this project.
+Based on the generated MVP spec, create a todo list in the
+form of user stories for each use case to build this project.
 
 Use the user story structure:
 
 “As a [persona], I [want to], [so that].”
 
+Under each user story, create a list of scenarios in the form
+of feature slices plus a matching gherkin-style acceptance test.
+
 Using the evolutionary vertical feature slicing approach, each
-slice should be a task that delivers a tiny bit of value to the
-end user end-to-end and builds on previous tasks.
+slice should deliver a tiny bit of value to the
+user end-to-end and builds on previous tasks.
 
 Intermediate shortcuts can be taken where necessary
 e.g. hardcoding some values, or using a flat-file for storage
 if subsequent tasks will replace them with production ready
 equivalents.
 
-Create a todo list representing the tasks in order of implementation
+Create a todo list representing the user stories and related
+scenarios as feature slices.
 
 # VERY IMPORTANT
 - Use markdown
-- Each task should represent a thin vertical feature slice 
-  that delivers some value to an end user (consumer, operator or backend staff)
-- We should be able to change each task's status from todo -> in
+- Each user story should list related scenarios
+- Each scenario should represent a thin vertical feature slice 
+  that delivers some value to an end user
+  (consumer, operator or backend staff)
+- We should be able to change each user story's status from todo -> in
   progress -> done
-- Each task should have a number id
+- Each user story should have a number id
 ```
 
 Save the output of this into a `todo.md` file, making changes where
-necessary. As you work through the tasks you may have to change some
-of them or even the overall approach based on acquired feedback or
-learned information.
+necessary. As you work through the user stories, be flexible in 
+adjusting the roadmap based on additional knowledge/received feedback.
+
+When adding new features to existing projects, we can identify the related
+use case/user stories and add to the todo list using a similar prompt.
 
 ## Architecture
 
@@ -118,11 +144,12 @@ Imperative Shell][fcis] pattern or [Domain Driven Design][ddd].
 [fcis]: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 [ddd]: https://www.cosmicpython.com/
 
-Where applicable, I can break down each task using FCIS with a prompt
-like:
+
+Where applicable, I can break down each user story/scenario using FCIS
+with a prompt like:
 
 ```
-I'd like to approach tasks using the functional core imperative
+I'd like to approach this user story/scenario using the functional core imperative
 shell pattern.
 
 The functional core will express the domain or business logic
