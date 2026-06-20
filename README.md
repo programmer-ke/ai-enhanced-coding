@@ -40,15 +40,12 @@ The findings will be used to determine:
 I'm building an MVP of the following:
 
 <Describe the idea in a few paragraphs here>
-
-Let's start with brainstorming on the use cases before fleshing
-out the remaining details.
 ```
 
-Answer questions for a few minutes with as much detail as you feel is
-necessary, until done or you decide is enough. Also steer the
-conversation toward the right direction if the AI is going off on a
-tangent (they tend to drift into implementation details)
+Answer questions with as much detail as you feel is necessary, until
+done or you decide is enough. Also steer the conversation toward the
+right direction if the AI is going off on a tangent (they tend to
+drift into implementation details)
 
 If necessary, use a prompt like the following to use the context of
 the previous conversation to create an MVP spec.
@@ -88,7 +85,7 @@ Acceptance tests      (e.g. gherkin-style tests matching scenarios)
 Next create a todo list with the user story format, starting from the
 most basic end-to-end functionality.
 
-In my case, I like using the [verticalfeature slicing][vert] approach,
+In my case, I like using the [vertical feature slicing][vert] approach,
 a kind of evolutionary approach to feature development.
 
 [vert]: https://web.archive.org/web/20260107094342/https://old.reddit.com/r/agile/comments/1btxpzd/vertical_slicing_the_single_most_impactful/
@@ -97,7 +94,7 @@ A prompt like the following can be used (modify as needed):
 
 ```
 Based on the generated MVP spec, create a todo list in the
-form of user stories for each use case to build this project.
+form of user stories for each use case needed to ship this product.
 
 Use the user story structure:
 
@@ -130,11 +127,12 @@ scenarios as feature slices.
 ```
 
 Save the output of this into a `todo.md` file, making changes where
-necessary. As you work through the user stories, be flexible in 
+necessary. As you work through the user stories, be flexible in
 adjusting the roadmap based on additional knowledge/received feedback.
 
-When adding new features to existing projects, we can identify the related
-use case/user stories and add to the todo list using a similar prompt.
+When adding new features to existing projects, we can identify the
+relevant use case/user stories and add to the todo list using a similar
+prompt.
 
 ## Architecture
 
