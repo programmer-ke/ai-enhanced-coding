@@ -100,8 +100,9 @@ Use the user story structure:
 
 “As a [persona], I [want to], [so that].”
 
-Under each user story, create a list of scenarios in the form
-of feature slices plus a matching gherkin-style acceptance test.
+Under each user story, create a list of scenarios in the form of tiny
+feature slices each with a matching gherkin-style acceptance
+test.
 
 Using the evolutionary vertical feature slicing approach, each
 slice should deliver a tiny bit of value to the
@@ -130,7 +131,7 @@ Save the output of this into a `todo.md` file, making changes where
 necessary. As you work through the user stories, be flexible in
 adjusting the roadmap based on additional knowledge/received feedback.
 
-When adding new features to existing projects, we can identify the
+When adding new features to existing products, we can identify the
 relevant use case/user stories and add to the todo list using a similar
 prompt.
 
