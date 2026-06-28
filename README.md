@@ -82,8 +82,7 @@ Scenarios             (concrete examples per story)
 Acceptance tests      (e.g. gherkin-style tests matching scenarios)
 ```
 
-Next create a todo list with the user story format, starting from the
-most basic end-to-end functionality.
+Mext create a todolist for each use case starting from the first one.
 
 In my case, I like using the [vertical feature slicing][vert] approach,
 a kind of evolutionary approach to feature development.
@@ -94,7 +93,7 @@ A prompt like the following can be used (modify as needed):
 
 ```
 Based on the generated MVP spec, create a todo list in the
-form of user stories for each use case needed to ship this product.
+form of user stories for use case xyz.
 
 Use the user story structure:
 
@@ -128,11 +127,11 @@ scenarios as feature slices.
 ```
 
 Save the output of this into a `todo.md` file, making changes where
-necessary. As you work through the user stories, be flexible in
-adjusting the roadmap based on additional knowledge/received feedback.
+necessary. As you work through the use cases, be flexible in
+adjusting the roadmap based on additional learnings/feedback.
 
 When adding new features to existing products, we can identify the
-relevant use case/user stories and add to the todo list using a similar
+relevant use cases / user stories and add to the todo list using a similar
 prompt.
 
 ## Architecture
